@@ -7,11 +7,11 @@ import (
 	"strings"
 	"os/exec"
 
-	"github.com/CortexFoundation/cuckoo-1"
+	"github.com/luckchn/testpl/cuckoo"
 	"github.com/CortexFoundation/CortexTheseus/common"
 )
 
-var hasher = cuckoo-1.New()
+var hasher = cuckoo.New()
 
 func (s *ProxyServer) processShare(login, id, ip string, t *BlockTemplate, params []string) (bool, bool) {
 	nonceHex := params[0]
